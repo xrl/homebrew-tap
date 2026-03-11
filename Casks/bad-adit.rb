@@ -1,8 +1,8 @@
 cask "bad-adit" do
-  version "0.1.1"
+  version "0.1.2"
   sha256 :no_check
 
-  url "https://github.com/xrl/bad-adit/releases/download/v#{version}/Bad.Adit_#{version}_aarch64.dmg"
+  url "https://github.com/xrl/bad-adit/releases/download/bad-adit-v#{version}/Bad.Adit_#{version}_aarch64.dmg"
   name "Bad Adit"
   desc "SSH tunnel manager for macOS with menu bar UI"
   homepage "https://github.com/xrl/bad-adit"
