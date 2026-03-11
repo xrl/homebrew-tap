@@ -11,6 +11,11 @@ cask "bad-adit" do
 
   app "Bad Adit.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/Bad Adit.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/com.tureus.bad-adit",
   ]
