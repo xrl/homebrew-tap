@@ -5,8 +5,8 @@ class ExpensifyCli < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/xrl/expensify-rs/releases/download/expensify-cli-0.1.0/expensify-cli-0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "5321a116fcfc7669f19152e6dd22e85bd0d4de4b7050286c2b4dbdd549dd6b4b"
+      url "https://github.com/xrl/expensify-rs/releases/download/expensify-cli-0.2.0/expensify-cli-0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "42238f0384a521ea212876b6f62e9b80f213fca14ad93aa860e81933055a9c6e"
     else
       odie "expensify-cli ships only Apple Silicon (arm64) macOS bottles. Build from source: " \
            "cargo install expensify-cli"
@@ -15,11 +15,11 @@ class ExpensifyCli < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/xrl/expensify-rs/releases/download/expensify-cli-0.1.0/expensify-cli-0.1.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "556189910870d7c55a9aa25eb9b79027f8bff88e1d4616f75f3a4efadb087c49"
+      url "https://github.com/xrl/expensify-rs/releases/download/expensify-cli-0.2.0/expensify-cli-0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "532368dc858a8fe4dfc9a16ce4873f74adfed6bab9e734fc35bf30a4a6000f91"
     else
-      url "https://github.com/xrl/expensify-rs/releases/download/expensify-cli-0.1.0/expensify-cli-0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5e2a209bdddda512d3c983dd48cad12a42dd5876819a24cd61c8407ae0823afb"
+      url "https://github.com/xrl/expensify-rs/releases/download/expensify-cli-0.2.0/expensify-cli-0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b0a1901254ce87ad1c99f940bbd8aa4e6fd5e2105ab82c837f627274facd6b0f"
     end
   end
 
